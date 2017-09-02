@@ -1,38 +1,101 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang = en>
 <head>
-    <title> Joshua Pierce Bio </title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+            <meta charset="UTF-8">
+
+            <title>Crystal Gamer</title>
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+            <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
-<body>
-<header>
-    <h1> Student Bio </h1>
-</header>
-
+<body style="background-image: url(assets/images/dt.png)">
+<!--name header-->
 <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="jumbotron">
+                            <h1 class="text-center" style="opacity: 1.0"> Crystal Collector</h1>
 
-    <section id="main bio">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <h2> Joshua Pierce </h2>
+<!-- rules container-->
+            <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h3 class="text-center">Rules</h3>
+                                <p>
+                                    There is a target number that the player must match.<br>
+                                   There are 4 crystals. At the start of each game, these 4 crystals will get a random value between 1 and 12 <br>
+                                    You only way for you to know each crystals value is by clicking them and seeing the target number change.<br>
+                                  The player wins if their score matches the target number.<br>
+                                    The player loses if their score goes above the target number.<br>
+                                    The game will restart after an outcome has been achieved<br>
+
+                                </p>
+
+                            </div>
 
 
-        <img id="bio-image" src="./IMG-0662.jpg" alt="my id pic" height="200" width="200">
 
-        <p> I am a student at the Georgia Institute of Technology Coding Bootcamp. I hope someday to work with Cancer scientists. </p>
-    </section>
+                        </div>
 
-    <section id="contact-info">
-        <h1> Contact Info </h1>
+                        <div class="row">
+                            <div class="col-lg-3 col md-3 col-sm-3 col-xs-12">
+                                <div id="number" class="panel panel-default">
+                                    <small style="margin-bottom: 0">Match This Number To Win</small><h1 id="compNumber" style="margin-top: 0"></h1>
+                                    <h1 id="userNumber">0</h1><small>Your Score</small>
+                                </div>
+                            </div>
 
-        <ul>
-            <li> <strong> Email: </strong> <a href="#" target=_blank>jepierce1992@gmail.com </a> </li>
-            <li> <strong> Github: </strong> <a href="https://github.com/jojap" target=_blank>Jojap</a></li>
-            <li> <strong> Linkedin: </strong> <a href="https://linkedin.com/in/jojap" target=_blank>Jojap</a> </li>
-        </ul>
-    </section>
-</div>
+                            <div id="crystals" class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                                <div>
+                                    <img id="blue" src="assets/images/blue.jpg" alt="blue" 		 class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                                    <img id="red" src="assets/images/red.jpg" alt="yellow"       class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                                    <img id="pink" src="assets/images/pink.jpg" alt="pink" 		 class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-3">
+
+                                    <img id="green" src="assets/images/green.jpg" alt="green"    class="thumbnail col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                </div>
+                                <div class="container panel panel-default col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        Wins
+                                        <span><strong id="wins" style="margin-left: 10px; color: green; font-size: 28px;"></strong></span>
+                                    </span>
+                                                    <span class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        Losses
+                                        <span><strong id="losses" style="margin-left: 10px; color: red; font-size: 28px;"></strong></span>
+                                    </span>
+                                </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+            </div>
+
+<!--game container-->
+
+
+
+
+
+
+
+
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+
 </body>
-
 </html>

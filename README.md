@@ -1,2 +1,2 @@
-# jojap.github.io
-Github project
+# week-4-game
+number panel game
