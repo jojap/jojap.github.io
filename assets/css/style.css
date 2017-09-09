@@ -5,6 +5,7 @@ body {
 }
 
 button {
+    background-color: red;
     margin-top: 10px;
     margin-right: 10px;
 

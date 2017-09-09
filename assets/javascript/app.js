@@ -22,7 +22,7 @@ var questions = [
     },
 
     {
-        "question":"Overall, the Falcons had turnover problems in 2015 at a ratio of -7. How did was their turnover ratio in 2016?",
+        "question":"Overall, the Falcons had turnover problems in 2015 at a ratio of -7. What was their turnover ratio in 2016?",
         "choices":["-15","-11","+11","+15"],
         "answer":"+11",
         "number":"3/5",
@@ -66,7 +66,7 @@ var timer;
 //variable that holds all of the returns
 var answerAll = "The correct answer is " + questions[questionNumber].answer + "." + "<br>" + "<img src=" + questions[questionNumber].image + ">" + "<br>" + questions[questionNumber].fact;
 
-//on window load, hide answer choice buttons, add click event
+//when the window initially loads, the answer buttons are hidden and a click event is established
 window.onload = function() {
     //click event for the answer button
     $(".answerbtn").click(userAnswer);
@@ -92,9 +92,9 @@ window.onload = function() {
 function start() {
     $("#timer").show();
     //timer starts counting down from 15s
-    //answer buttons are visible
+    //answer buttons are shown
     $(".answerbtn").css("display","initial");
-    //start button is hidden
+    //start button goes away
     $("#start").css("display","none");
     //shows timer
 
@@ -153,7 +153,7 @@ function questionEnd() {
         runNextQuestion();
     }
     else {
-        //screen shows use was wrong
+        //screen shows user was wrong
         $("#questionNumber").html("<h1>Wrong!</h1>");
         //reset answerAll
         answerAll = "The correct answer is " + questions[questionNumber].answer + "." + "<br>" + "<img src=" + questions[questionNumber].image + ">" + "<br>" + questions[questionNumber].fact;
