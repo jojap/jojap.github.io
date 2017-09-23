@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title> Joshua Pierce Bio </title>
+<html lang="en">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Giphy API</title><link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
 
 </head>
-<body>
-<header>
-    <h1> Student Bio </h1>
-</header>
 
-<div class="container">
-
-    <section id="main bio">
-
-        <h2> Joshua Pierce </h2>
+<body style="background-image: url(../jojap.github.io/assets/images/sp.png)">
 
 
-        <img id="bio-image" src="./IMG-0662.jpg" alt="my id pic" height="200" width="200">
+<p><a href="https://giphy.com/gifs/season-4-carlton-fresh-prince-r3xkESN1yMqfS"><img id="logo" src="../jojap.github.io/assets/images/giphylogo.png"> Powered by GIPHY</a></p>
 
-        <p> I am a student at the Georgia Institute of Technology Coding Bootcamp. I hope someday to work with Cancer scientists. </p>
-    </section>
+<div id="allButtons"></div>
 
-    <section id="contact-info">
-        <h1> Contact Info </h1>
+<form>
+    Try to make a button!
+    <br>
+    <br>
+    <input type="text" name="userButton" id="userInput">
+    <br>
+    <br>
+    <input type="submit" value="Make Button" class="addButton">
+</form>
 
-        <ul>
-            <li> <strong> Email: </strong> <a href="#" target=_blank>jepierce1992@gmail.com </a> </li>
-            <li> <strong> Github: </strong> <a href="https://github.com/jojap" target=_blank>Jojap</a></li>
-            <li> <strong> Linkedin: </strong> <a href="https://linkedin.com/in/jojap" target=_blank>Jojap</a> </li>
-        </ul>
-    </section>
-</div>
+<div id="gifdiv"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="assets/js/api.js"></script>
 </body>
-
 </html>
