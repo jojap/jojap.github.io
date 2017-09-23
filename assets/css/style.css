@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 html, body{
     font-family: 'Roboto Slab', serif;
     width: 100%;
@@ -23,37 +23,3 @@ button {
 #logo {
     width: 50px;
 }
-=======
-body {
-    background-image: url("../images/background.jpg");
-    color: white;
-    font-size: 14pt;
-}
-
-button {
-    background-color: red;
-    margin-top: 10px;
-    margin-right: 10px;
-
-}
-
-.resetbtn {
-    display: none;
-}
-.answerbtn {
-    display: none;
-
-}
-img {
-    max-width: 550px;
-    float: left;
-    padding-top: 30px;
-    padding-right: 20px;
-}
-
-div {
-    padding-right: 10px;
-}
-
-
->>>>>>> 3c0cc043f87c0dc77fdd8f35dbfe9b7ee2186669
