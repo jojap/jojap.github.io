@@ -9,17 +9,26 @@ html, body{
     background-size: cover;
     margin: 0;
 }
-p {
+.jumbotron {
+    margin-top: 30px;
     color: white;
+    background-color: #29cec1;
 }
-div {
-    overflow: visible;
+.panel-heading {
+    background-color: #29cec1 !important;
+}
+.btn {
+    background-color: #29cec1;
+}
+/*prevents spill-over in table at smaller screen sizes*/
+@media screen and (max-width:500px) {
+    table {
+        font-size: 10pt;
+    }
 }
 
-button {
-    background-color: lightblue;
-}
-
-#logo {
-    width: 50px;
+@media screen and (max-width:400px){
+    table {
+        font-size: 9pt;
+    }
 }
